@@ -9,12 +9,14 @@ class SierpinskiTriangleTest {
 
     @Test
     void drawTriangle_returnsExpectedString() {
-        String expected = """
-                   *  \s
-                  * * \s
-                 *   *\s
-                *******""";
+        String expected = new StringBuilder()
+                .append("   █   \n")
+                .append("  █ █  \n")
+                .append(" █   █ \n")
+                .append("███████")
+                .toString();
         String result = SierpinskiTriangle.drawTriangle(4);
+        // Putting "\n" in both actual and expected just for better readability in log
         assertThat("\n" + result).isEqualTo("\n" + expected);
     }
 

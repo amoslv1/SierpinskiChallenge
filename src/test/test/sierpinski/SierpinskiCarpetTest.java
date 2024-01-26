@@ -7,9 +7,9 @@ import static org.assertj.core.api.Assertions.*;
 class SierpinskiCarpetTest {
 
     private final static String ORDER_1 =  """
-            ***
-            * *
-            ***""";
+            ███
+            █ █
+            ███""";
 
     public static final String ORDER_2 = new StringBuilder()
             .append("*********\n")
