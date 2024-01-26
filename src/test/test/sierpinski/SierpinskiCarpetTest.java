@@ -9,26 +9,26 @@ class SierpinskiCarpetTest {
     private final static String ORDER_1 =  """
             ***
             * *
-            ***
-            """;
+            ***""";
 
-    public static final String ORDER_2 = """
-            *********
-            * ** ** *
-            *********
-            ***   ***
-            * *   * *
-            ***   ***
-            *********
-            * ** ** *
-            *********
-            """;
+    public static final String ORDER_2 = new StringBuilder()
+            .append("*********\n")
+            .append("* ** ** *\n")
+            .append("*********\n")
+            .append("***   ***\n")
+            .append("* *   * *\n")
+            .append("***   ***\n")
+            .append("*********\n")
+            .append("* ** ** *\n")
+            .append("*********")
+            .toString();
 
     @Test
     void drawSierpinskiCarpet_drawsOrder1Carpet() {
         int order = 1;
         int size = 3;
         String result = SierpinskiCarpet.drawSierpinskiCarpet(order, size);
+        // Putting "\n" in both actual and expected just for better readability in log
         assertThat("\n" + result).isEqualTo("\n" + ORDER_1);
     }
 
@@ -37,6 +37,7 @@ class SierpinskiCarpetTest {
         int order = 2;
         int size = 9;
         String result = SierpinskiCarpet.drawSierpinskiCarpet(order, size);
+        // Putting "\n" in both actual and expected just for better readability in log
         assertThat("\n" + result).isEqualTo("\n" + ORDER_2);
     }
 

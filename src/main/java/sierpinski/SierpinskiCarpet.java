@@ -8,11 +8,11 @@ public class SierpinskiCarpet {
     
     public static String drawSierpinskiCarpet(int order, int size) {
         //TODO: Implement this
-        String result = """
-                ***
-                * *
-                ***
-                """;
+        String result = new StringBuilder()
+                .append("***\n")
+                .append("* *\n")
+                .append("***")
+                .toString();
         System.out.println("This is the carpet from drawSierpinskiCarpet:\n" + result);
         return result;
     }

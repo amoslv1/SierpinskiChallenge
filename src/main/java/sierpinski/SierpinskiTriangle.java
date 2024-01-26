@@ -6,8 +6,9 @@ public class SierpinskiTriangle {
 
         drawSierpinskiTriangle(3);
     }
-    public static void drawTriangle(int height){
-        //TODO: Implement this 
+    public static String drawTriangle(int height){
+        //TODO: Implement this
+        return "***";
     };
     
     public static void drawSierpinskiTriangle(int order) {
