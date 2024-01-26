@@ -24,13 +24,14 @@ midpointIndex = height - 1
 
 ### Size
 * Smallest Unit Size ^ Order = Carpet Size
+* Size must be a square/cube etc number
 
-| Order | Min Size |
-|-------|----------| 
-| 2     | 9        |
-| 3     | 27       |
-| 4     | 108      |
-| 5     | 324      |
+| Smallest Unit Size | Order | Carpet Size     |
+|--------------------|-------|-----------------| 
+| 3                  | 2     | 9               |
+| 3                  | 3     | 27              |
+| 3                  | 4     | 108             |
+| 3                  | 5     | 324             |
 
 ### Smallest Unit
 * Must be multiple of 3x3
@@ -57,11 +58,9 @@ midpointIndex = height - 1
 *********
 *********
 *********
-*********
 ***   ***
 ***   ***
 ***   ***
-*********
 *********
 *********
 *********
@@ -76,14 +75,14 @@ midpointIndex = height - 1
 ``` 
 1
 
-*** 
+***
 * *
 ***
 ```
 ``` 
 2
 
-********* 
+*********
 * ** ** *
 *********
 ***   ***
