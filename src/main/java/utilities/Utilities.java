@@ -1,5 +1,5 @@
 package utilities;
 
 public class Utilities {
-    public static String blockChar = "█";
+    public final static String BLOCK_CHAR = "█";
 }
