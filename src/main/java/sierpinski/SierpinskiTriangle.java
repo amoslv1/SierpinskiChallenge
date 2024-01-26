@@ -13,4 +13,12 @@ public class SierpinskiTriangle {
     public static void drawSierpinskiTriangle(int order) {
      //TODO: Implement this   
     }
+
+    protected static int getWidth(int height) {
+        return height * 2 - 1;
+    }
+
+    protected static int getMidpointIndex(int height) {
+        return height - 1;
+    }
 }
