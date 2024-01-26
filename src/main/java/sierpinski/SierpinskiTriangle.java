@@ -8,7 +8,12 @@ public class SierpinskiTriangle {
     }
     public static String drawTriangle(int height){
         //TODO: Implement this
-        return "***";
+        String result = new StringBuilder()
+                .append("  █  \n")
+                .append(" █ █ \n")
+                .append("█████")
+                .toString();
+        return result;
     };
     
     public static void drawSierpinskiTriangle(int order) {

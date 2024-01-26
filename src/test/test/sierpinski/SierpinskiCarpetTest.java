@@ -2,7 +2,7 @@ package sierpinski;
 
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class SierpinskiCarpetTest {
 
@@ -12,15 +12,15 @@ class SierpinskiCarpetTest {
             ███""";
 
     public static final String ORDER_2 = new StringBuilder()
-            .append("*********\n")
-            .append("* ** ** *\n")
-            .append("*********\n")
-            .append("***   ***\n")
-            .append("* *   * *\n")
-            .append("***   ***\n")
-            .append("*********\n")
-            .append("* ** ** *\n")
-            .append("*********")
+            .append("█████████\n")
+            .append("█ ██ ██ █\n")
+            .append("█████████\n")
+            .append("███   ███\n")
+            .append("█ █   █ █\n")
+            .append("███   ███\n")
+            .append("█████████\n")
+            .append("█ ██ ██ █\n")
+            .append("█████████")
             .toString();
 
     @Test

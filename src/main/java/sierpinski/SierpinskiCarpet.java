@@ -2,8 +2,6 @@ package sierpinski;
 
 public class SierpinskiCarpet {
 
-    private static final String blockChar = "█";
-
    public static void main(String[] args) {
         drawSierpinskiCarpet(3, 27);
     }
